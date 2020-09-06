@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <article></article>
+
+        <input
+            type="button"
+            value="fetch"
+            onclick="
+            fetch('css').then(function(response){
+                response.text().then(function(text){
+                    alert(text);})})"
+        />
+    </body>
+</html>
+
+<!-- "모든 작업이 끝난 다음에는 alert(text)가 호출되고, text 에는 서버가 응답한 데이터가 있다" 라는 사실만 알아두기-->
